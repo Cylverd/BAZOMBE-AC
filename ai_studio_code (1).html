@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAZOMBE AC - Membres d'Honneur</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #D4AF37; /* L'or du logo */
+            --light-gold: #F3E5AB;
+            --black: #000000;
+            --dark-gray: #121212;
+            --white: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--black);
+            color: var(--white);
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* En-tête avec Logo */
+        header {
+            padding: 60px 20px;
+            text-align: center;
+            background: radial-gradient(circle, #1a1a1a 0%, #000000 100%);
+            border-bottom: 2px solid var(--gold);
+        }
+
+        .logo-container img {
+            width: 180px; /* Taille du logo */
+            height: auto;
+            margin-bottom: 20px;
+            filter: drop-shadow(0px 0px 15px rgba(212, 175, 55, 0.3));
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin: 10px 0;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .motto {
+            font-size: 1rem;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: var(--light-gold);
+            font-weight: 300;
+            margin-top: 5px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+            color: #ccc;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Cartes de Cotisation */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--dark-gray);
+            border: 1px solid #222;
+            padding: 40px 25px;
+            text-align: center;
+            transition: 0.4s ease;
+            position: relative;
+        }
+
+        .card:hover {
+            border-color: var(--gold);
+            transform: translateY(-10px);
+        }
+
+        .card.premium {
+            border: 2px solid var(--gold);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.1);
+        }
+
+        .card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        .price span {
+            font-size: 0.9rem;
+            color: var(--gold);
+        }
+
+        .benefits {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 35px;
+            text-align: left;
+        }
+
+        .benefits li {
+            padding: 10px 0;
+            border-bottom: 1px solid #222;
+            font-size: 0.9rem;
+            color: #ddd;
+        }
+
+        .benefits li::before {
+            content: "✦ ";
+            color: var(--gold);
+        }
+
+        /* Bouton USSD */
+        .btn-ussd {
+            display: block;
+            background: var(--gold);
+            color: var(--black);
+            padding: 15px 20px;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+
+        .btn-ussd:hover {
+            background: var(--white);
+        }
+
+        .ussd-code {
+            display: block;
+            font-size: 0.75rem;
+            margin-top: 10px;
+            color: #888;
+            font-family: monospace;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            background: #050505;
+            border-top: 1px solid #111;
+            margin-top: 50px;
+        }
+
+        .info-paiement {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px dashed #444;
+            font-size: 0.9rem;
+            color: var(--gold);
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .motto { font-size: 0.7rem; letter-spacing: 3px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <!-- Remplacez "logo.jpg" par le nom de votre fichier image -->
+            <img src="logo.jpg" alt="Logo Bazombe Association Club">
+        </div>
+        <h1>Bazombe Association Club</h1>
+        <div class="motto">Rigueur • Travail • Discipline</div>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Devenir Membre d'Honneur</h2>
+            <p>Votre engagement soutient le développement de nos jeunes talents et l'excellence de notre institution. Choisissez votre pack de soutien.</p>
+        </div>
+
+        <div class="grid">
+            <!-- PACK ARGENT -->
+            <div class="card">
+                <h3>Argent</h3>
+                <div class="price">15 000 <span>F CFA</span></div>
+                <ul class="benefits">
+                    <li>Carte de membre officielle</li>
+                    <li>Accès aux matchs de saison</li>
+                    <li>Écharpe de supporter VIP</li>
+                </ul>
+                <!-- Le lien href tel: permet de lancer l'appel directement sur mobile -->
+                <a href="tel:*150*2*1*074650609*15000%23" class="btn-ussd">Cotiser via Airtel</a>
+                <span class="ussd-code">*150*2*1*074650609*15000#</span>
+            </div>
+
+            <!-- PACK OR -->
+            <div class="card premium">
+                <div style="background:var(--gold); color:black; font-size:0.7rem; font-weight:bold; padding:2px 10px; position:absolute; top:0; left:50%; transform:translateX(-50%);">CONSEILLÉ</div>
+                <h3>Or</h3>
+                <div class="price">30 000 <span>F CFA</span></div>
+                <ul class="benefits">
+                    <li>Avantages Pack Argent</li>
+                    <li>Chemise brodée officielle</li>
+                    <li>Place réservée en tribune d'honneur</li>
+                </ul>
+                <a href="tel:*150*2*1*074650609*30000%23" class="btn-ussd">Cotiser via Airtel</a>
+                <span class="ussd-code">*150*2*1*074650609*30000#</span>
+            </div>
+
+            <!-- PACK ELITE -->
+            <div class="card">
+                <h3>Élite</h3>
+                <div class="price">50 000 <span>F CFA</span></div>
+                <ul class="benefits">
+                    <li>Avantages Pack Or</li>
+                    <li>Tenue de ville Prestige complète</li>
+                    <li>Invitation au dîner de gala annuel</li>
+                </ul>
+                <a href="tel:*150*2*1*074650609*50000%23" class="btn-ussd">Cotiser via Airtel</a>
+                <span class="ussd-code">*150*2*1*074650609*50000#</span>
+            </div>
+        </div>
+
+        <div class="info-paiement">
+            <strong>Note importante :</strong> En cliquant sur "Cotiser", votre téléphone ouvrira automatiquement le clavier d'appel avec le code Airtel Money. Validez simplement avec votre code secret pour confirmer votre soutien.
+        </div>
+    </div>
+
+    <footer>
+        <p>BAZOMBE ASSOCIATION CLUB © 2026</p>
+        <p style="color: #444; font-size: 0.8rem;">Fondé sur la Rigueur, le Travail et la Discipline</p>
+    </footer>
+
+</body>
+</html>
